@@ -7,6 +7,102 @@ body{margin:0;font-family:Arial;background:#0f1715;color:#c6ccd0}
 header{display:flex;justify-content:space-between;align-items:center;padding:18px 40px;position:sticky;top:0;background:#0f1715c9;backdrop-filter:blur(8px)}
 header img{height:60px;border-radius:8px}
 nav a{color:#c6ccd0;text-decoration:none;margin:0 10px;font-weight:600}
+
+/* HERO IMAGE – using IMG_4301.jpeg */
+.hero{background:url('IMG_4301.jpeg') center/cover no-repeat;min-height:420px;display:flex;align-items:center;padding:80px 40px;background-blend-mode:overlay;background-color:rgba(11,61,38,0.55)}
+.hero h1{color:#fff;font-size:42px;margin:0}
+
+.section{padding:60px 40px;max-width:1100px;margin:auto}
+h2{color:#fff;font-size:28px;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:#0b1310;padding:22px;border-radius:10px;border:1px solid rgba(255,255,255,0.05)}
+.gal-img{width:100%;height:220px;object-fit:cover;border-radius:8px}
+
+form input,form select,form textarea{width:100%;padding:12px;margin-top:8px;margin-bottom:15px;border-radius:8px;border:1px solid rgba(255,255,255,0.08);background:transparent;color:#c6ccd0}
+button{background:#0b3d26;color:#fff;padding:14px;border:none;border-radius:8px;font-weight:700;width:100%}
+footer{text-align:center;padding:30px;color:#c6ccd0}
+</style>
+</head>
+<body>
+
+<header>
+  <!-- YOUR REAL LOGO -->
+  <img src="IMG_2561.png">
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#booking">Book</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Professional Landscaping & Lawn Care</h1>
+    <p>Reliable. Affordable. Always Green.</p>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card"><h3>Landscape Design</h3><p>Beautiful, functional designs.</p></div>
+    <div class="card"><h3>Lawn Maintenance</h3><p>Weekly & biweekly plans.</p></div>
+    <div class="card"><h3>Yard Clean Up</h3><p>Comprehensive yard clean-up for every season.</p></div>
+    <div class="card"><h3>Sprinkler Repair</h3><p>Fast, efficient solutions.</p></div>
+    <div class="card"><h3>Turf Installation</h3><p>High-quality artificial turf solutions.</p></div>
+    <div class="card"><h3>Tree Trimming</h3><p>Professional tree care.</p></div>
+    <div class="card"><h3>Sod Installation</h3><p>Fresh, healthy lawns installed.</p></div>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <h2>Project Gallery</h2>
+  <div class="grid">
+
+    <!-- YOUR REAL PHOTOS -->
+    <img src="6049705A-948B-4AC9-B0F6-CB2853EFF193.jpeg" class="gal-img">
+    <img src="IMG_4301.jpeg" class="gal-img">
+    <img src="IMG_4315.png" class="gal-img">
+    <img src="IMG_4316.png" class="gal-img">
+    <img src="IMG_4317.png" class="gal-img">
+    <img src="IMG_6762.jpeg" class="gal-img">
+
+  </div>
+</section>
+
+<section id="booking" class="section">
+  <h2>Book a Service</h2>
+  <form action="https://formsubmit.co/MartinezAlwaysGreen@icloud.com" method="POST">
+    <input type="hidden" name="_subject" value="New Booking Request!">
+    <input type="hidden" name="_captcha" value="false">
+    <label>Name</label><input name="name" required>
+    <label>Phone</label><input name="phone" required>
+    <label>Email</label><input name="email">
+    <label>Service</label>
+    <select name="service" required>
+        <option>Lawn Mowing</option>
+        <option>Weekly Service</option>
+        <option>Yard Clean Up</option>
+        <option>Sprinkler Repair</option>
+        <option>Turf Install</option>
+    </select>
+    <label>Message</label><textarea name="message" rows="5"></textarea>
+    <button>Submit</button>
+  </form>
+</section>
+
+<footer>© 2025 Martinez Always Green Landscape</footer>
+
+</body>
+</html><!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Martinez Always Green Landscape</title>
+<style>
+body{margin:0;font-family:Arial;background:#0f1715;color:#c6ccd0}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 40px;position:sticky;top:0;background:#0f1715c9;backdrop-filter:blur(8px)}
+header img{height:60px;border-radius:8px}
+nav a{color:#c6ccd0;text-decoration:none;margin:0 10px;font-weight:600}
 .hero{background:url('photo1.jpeg') center/cover no-repeat;min-height:420px;display:flex;align-items:center;padding:80px 40px;background-blend-mode:overlay;background-color:rgba(11,61,38,0.55)}
 .hero h1{color:#fff;font-size:42px;margin:0}
 .section{padding:60px 40px;max-width:1100px;margin:auto}
